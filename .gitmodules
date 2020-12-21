@@ -1,0 +1,3 @@
+[submodule "npb"]
+	path = npb
+	url = git@github.com:IoanAnev/ArgoDSM-NPB.git
