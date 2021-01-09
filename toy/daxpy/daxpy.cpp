@@ -1,8 +1,4 @@
-#include "argo.hpp"
-#include "omp.h"
-#include <iostream>
-
-/* An ArgoDSM@OpenMP implementation of the daxpy BLAS operation
+/* An ArgoDSM@OpenMP implementation of the daxpy BLAS operation.
  * 
  * It receives as input the dimension N of the vectors. We can
  * control the number of times that the daxpy kernel will execute
@@ -11,6 +7,11 @@
  * We initialize the vectors with prefixed values which we can later
  * check to ensure correctness of the computations
  */
+
+#include "argo.hpp"
+
+#include <omp.h>
+#include <iostream>
 
 int workrank, numtasks, nthreads;
 

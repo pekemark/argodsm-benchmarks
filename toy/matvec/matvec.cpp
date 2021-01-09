@@ -1,8 +1,4 @@
-#include "argo.hpp"
-#include "omp.h"
-#include <iostream>
-
-/* An ArgoDSM@OpenMP implementation for the matrix-vector multiplication
+/* An ArgoDSM@OpenMP implementation of the matrix-vector multiplication.
  * kernel: y += A*x.
  * 
  * It receives as input the dimensions ([M, N]) of the problem. We can
@@ -12,6 +8,11 @@
  * We initialize the vectors with prefixed values which we can later check to
  * ensure the correctness of the computation.
  */
+
+#include "argo.hpp"
+
+#include <omp.h>
+#include <iostream>
 
 int workrank, numtasks, nthreads;
 
@@ -109,25 +110,27 @@ int main(int argc, char *argv[])
 	
 	A = argo::conew_array<double>(M * N);
 	y = argo::conew_array<double>(M);
-	x = new double[N];
+	x = argo::conew_array<double>(N);
 
 	clock_gettime(CLOCK_MONOTONIC, &tp_start);
 
-	size_t beg, end;
-	distribute(beg, end, M, 0, 0);
+	size_t begM, endM, begN, endN;
+	distribute(begM, endM, M, 0, 0);
+	distribute(begN, endN, N, 0, 0);
 
 	#pragma omp parallel
 	{
-		init(beg, end, y, 0);
-		init(0, N, x, 1);
+		init(begM, endM, y, 0);
+		init(begN, endN, x, 1);
+		argo::barrier(nthreads);
 		
 		#pragma omp for schedule(static)
-		for (size_t i = beg; i < end; ++i) {
+		for (size_t i = begM; i < endM; ++i) {
 			init(0, N, &A[i * N], 2);
 		}
 		
 		for (size_t iter = 0; iter < ITER; ++iter) {
-			matvec(beg, end, A, N, x, y);
+			matvec(begM, endM, A, N, x, y);
 		}
 	}
 
@@ -156,7 +159,7 @@ int main(int argc, char *argv[])
 	
 	argo::codelete_array(A);
 	argo::codelete_array(y);
-	delete[] x;
+	argo::codelete_array(x);
 
 	argo::finalize();
 	
