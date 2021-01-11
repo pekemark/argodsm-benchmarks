@@ -1,3 +1,6 @@
 [submodule "npb"]
 	path = npb
 	url = git@github.com:IoanAnev/ArgoDSM-NPB.git
+[submodule "parsec"]
+	path = parsec
+	url = git@github.com:IoanAnev/ArgoDSM-PARSEC.git
