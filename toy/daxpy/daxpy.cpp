@@ -1,11 +1,13 @@
 /* An ArgoDSM@OpenMP implementation of the daxpy BLAS operation.
- * 
+ *
  * It receives as input the dimension N of the vectors. We can
  * control the number of times that the daxpy kernel will execute
  * with the ITER argument.
- * 
+ *
  * We initialize the vectors with prefixed values which we can later
  * check to ensure correctness of the computations
+ *
+ * ArgoDSM/OpenMP version written by Ioannis Anevlavis - Eta Scale AB
  */
 
 #include "argo.hpp"

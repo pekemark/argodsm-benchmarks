@@ -40,6 +40,8 @@
 /*     program constitutes acceptance of these licensing restrictions.   */
 /*  5. Absolutely no warranty is expressed or implied.                   */
 /*-----------------------------------------------------------------------*/
+/* ArgoDSM/OpenMP version written by Ioannis Anevlavis - Eta Scale AB    */
+/*-----------------------------------------------------------------------*/
 
 #include "argo.hpp"
 

@@ -35,6 +35,8 @@
   wrk2 : working area, OMEGA : relaxation parameter
   BND:control variable for boundaries and objects ( = 0 or 1)
   P: pressure
+  ------------------
+  ArgoDSM/OpenMP version written by Ioannis Anevlavis - Eta Scale AB
 ********************************************************************/
 
 #include "argo.hpp"

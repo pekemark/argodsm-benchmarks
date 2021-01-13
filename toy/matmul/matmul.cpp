@@ -1,10 +1,12 @@
 /* An ArgoDSM@OpenMP implementation of matrix multiplication.
- * 
+ *
  * It receives as input the dimension N and constructs three NxN matrices
  * (+1 for verification). We can enable verification with the -v argument.
- * 
+ *
  * We initialize the matrices with prefixed values which we can later
  * check to ensure correctness of the computations.
+ *
+ * ArgoDSM/OpenMP version written by Ioannis Anevlavis - Eta Scale AB
  */
 
 #include "argo.hpp"

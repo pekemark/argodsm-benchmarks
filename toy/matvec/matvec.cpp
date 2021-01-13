@@ -1,12 +1,14 @@
 /* An ArgoDSM@OpenMP implementation of the matrix-vector multiplication.
  * kernel: y += A*x.
- * 
+ *
  * It receives as input the dimensions ([M, N]) of the problem. We can
  * control the number of times that we will execute the matvec kernel
  * with the ITER argument.
- * 
+ *
  * We initialize the vectors with prefixed values which we can later check to
  * ensure the correctness of the computation.
+ *
+ * ArgoDSM/OpenMP version written by Ioannis Anevlavis - Eta Scale AB
  */
 
 #include "argo.hpp"
