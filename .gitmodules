@@ -4,3 +4,6 @@
 [submodule "parsec"]
 	path = parsec
 	url = git@github.com:IoanAnev/ArgoDSM-PARSEC.git
+[submodule "vgogte"]
+	path = vgogte
+	url = git@github.com:IoanAnev/ArgoDSM-VGOGTE.git
