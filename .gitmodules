@@ -7,3 +7,6 @@
 [submodule "vgogte"]
 	path = vgogte
 	url = git@github.com:IoanAnev/ArgoDSM-VGOGTE.git
+[submodule "toy"]
+	path = toy
+	url = git@github.com:IoanAnev/ArgoDSM-TOY.git
