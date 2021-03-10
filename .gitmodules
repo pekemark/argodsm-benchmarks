@@ -10,3 +10,6 @@
 [submodule "toy"]
 	path = toy
 	url = git@github.com:IoanAnev/ArgoDSM-TOY.git
+[submodule "bpmf"]
+	path = bpmf
+	url = git@github.com:IoanAnev/ArgoDSM-BPMF.git
