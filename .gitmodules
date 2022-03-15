@@ -1,15 +1,15 @@
 [submodule "npb"]
 	path = npb
-	url = git@github.com:IoanAnev/npb.git
+	url = git@github.com:ioanev/npb.git
 [submodule "parsec"]
 	path = parsec
-	url = git@github.com:IoanAnev/parsec.git
+	url = git@github.com:ioanev/parsec.git
 [submodule "vgogte"]
 	path = vgogte
-	url = git@github.com:IoanAnev/vgogte.git
+	url = git@github.com:ioanev/vgogte.git
 [submodule "toy"]
 	path = toy
-	url = git@github.com:IoanAnev/argodsm-toy.git
+	url = git@github.com:ioanev/argodsm-toy.git
 [submodule "bpmf"]
 	path = bpmf
-	url = git@github.com:IoanAnev/bpmf.git
+	url = git@github.com:ioanev/bpmf.git
