@@ -17,7 +17,6 @@ The original repository can be found [here](https://github.com/GMAP/NPB-CPP).
 - CG
 - EP
 - FT
-- LU
 - MG
 
 ## PARSEC
