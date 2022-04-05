@@ -41,6 +41,7 @@ Some toy benchmarks.
 - Stream
 
 ## VGOGTE
+
 The Vaibhav Gogte & Aasheesh Kolli benchmarks.
 
 <ins>Benchmarks</ins>:
@@ -50,6 +51,11 @@ The Vaibhav Gogte & Aasheesh Kolli benchmarks.
 - Red Black Tree
 - TATP
 - TPCC
+
+## VMS
+
+Virtual Molecule Screening.\
+The original repository can be found [here](https://github.com/ExaScience/vms).
 
 # Contact Information
 

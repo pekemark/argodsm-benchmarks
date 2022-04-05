@@ -13,3 +13,6 @@
 [submodule "bpmf"]
 	path = bpmf
 	url = git@github.com:ioanev/bpmf.git
+[submodule "vms"]
+	path = vms
+	url = git@github.com:ioanev/vms.git
