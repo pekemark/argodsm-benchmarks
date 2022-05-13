@@ -6,7 +6,8 @@
 	url = git@github.com:ioanev/parsec.git
 [submodule "vgogte"]
 	path = vgogte
-	url = git@github.com:ioanev/vgogte.git
+	url = git@github.com:pekemark/vgogte.git
+	branch = improvement
 [submodule "toy"]
 	path = toy
 	url = git@github.com:ioanev/argodsm-toy.git
