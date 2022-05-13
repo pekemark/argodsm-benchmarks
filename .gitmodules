@@ -7,7 +7,7 @@
 [submodule "vgogte"]
 	path = vgogte
 	url = git@github.com:pekemark/vgogte.git
-	branch = improvement
+	branch = persistence
 [submodule "toy"]
 	path = toy
 	url = git@github.com:ioanev/argodsm-toy.git
